@@ -14,23 +14,30 @@ body{
 
 .kv-figure{
   display: flex;
+  justify-content: center;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+  width: 100%;
 }
 .kv-figure__capital{
   position: relative;
+  width: max-content;
 }
 .kv-figure__capital img{
-  position: absolute;
-  left: -3.2rem;
   place-items: center;
   transform-style: preserve-3d;
   transition: rotate 0.5s;
   transform-origin: 0 50% -1.5rem;
 }
+.innovation{
+  position: absolute;
+  right: 0;
+}
 .wennovation{
-  left: -8rem!important;
   rotate: x -90deg;
+}
+.nnovation img{
+  width: 100%;
 }
 .hitori{
   display: flex;
@@ -39,6 +46,38 @@ body{
 }
 .hitori img{
   width: 100%;
+}
+@media(max-width:430px){
+  .kv-figure__capital{
+    width: 39%;
+    display: flex;
+    align-items: center;
+  }
+  .kv-figure__capital img {
+    width: 100%;
+  }
+  .innovation{
+    width: 44%!important;
+    top: 0;
+  }
+}
+@media(min-width:375px) and (max-width:430px){
+  .kv-figure__capital{
+    width: 34%;
+  }
+  .innovation{
+    width: 42%!important;
+    top: 0;
+  }
+}
+@media(min-width:405px) and (max-width:430px){
+  .kv-figure__capital{
+    width: 30%;
+  }
+  .innovation{
+    width: 42%!important;
+    top: 0;
+  }
 }
 
 
