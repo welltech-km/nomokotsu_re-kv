@@ -47,38 +47,6 @@ body{
 .hitori img{
   width: 100%;
 }
-@media(max-width:430px){
-  .kv-figure__capital{
-    width: 39%;
-    display: flex;
-    align-items: center;
-  }
-  .kv-figure__capital img {
-    width: 100%;
-  }
-  .innovation{
-    width: 44%!important;
-    top: 0;
-  }
-}
-@media(min-width:375px) and (max-width:430px){
-  .kv-figure__capital{
-    width: 34%;
-  }
-  .innovation{
-    width: 42%!important;
-    top: 0;
-  }
-}
-@media(min-width:405px) and (max-width:430px){
-  .kv-figure__capital{
-    width: 30%;
-  }
-  .innovation{
-    width: 42%!important;
-    top: 0;
-  }
-}
 
 
 /* 1つ目の画像: 下から上へスライドイン */
