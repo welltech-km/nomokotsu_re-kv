@@ -18,12 +18,15 @@ body{
   opacity: 0;
   transition: opacity 1s ease-in-out;
   width: 100%;
+  font-size: 64px;
+  font-family: 'Doumbar', sans-serif;
 }
 .kv-figure__capital{
   position: relative;
   width: max-content;
 }
-.kv-figure__capital img{
+.kv-figure__capital span{
+  display: inline-block;
   place-items: center;
   transform-style: preserve-3d;
   transition: rotate 0.5s;
@@ -35,9 +38,6 @@ body{
 }
 .wennovation{
   rotate: x -90deg;
-}
-.nnovation img{
-  width: 100%;
 }
 .hitori{
   display: flex;
@@ -84,7 +84,7 @@ body{
 /* 1つ目の画像: 下から上へスライドイン */
 @keyframes slideUp {
   from {
-      transform: translateY(50px);
+      transform: translateY(35px);
       opacity: 0;
   }
   to {
